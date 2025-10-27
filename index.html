@@ -1,123 +1,417 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Arpit Tiwari - Personal Website">
+    <meta name="author" content="Arpit Tiwari">
     <title>Arpit Tiwari | Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap" rel="stylesheet">
+    
+    <!-- CSS FILES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Arpit Tiwari</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <main>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <i class="bi bi-code-square navbar-brand-icon me-2"></i>
+                    Arpit Tiwari
+                </a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Arpit Tiwari</span></h1>
-                <p class="hero-subtitle">Welcome to my personal website</p>
-                <p class="hero-description">Solving problem through code</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="ms-lg-3">
+                        <a class="btn custom-btn custom-border-btn" href="mailto:tiwari.arpit1999@gmail.com">
+                            Get In Touch
+                            <i class="bi-arrow-up-right ms-2"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hello! I'm Arpit Tiwari, passionate about creating amazing digital experiences.</p>
-                    <p>I love building things and solving problems through code. Always learning and exploring new technologies.</p>
+        <!-- Hero Section -->
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12 mx-auto">
+                        <em class="small-text">Welcome to my portfolio</em>
+                        
+                        <h1>Arpit Tiwari</h1>
+
+                        <p class="text-white mb-4 pb-lg-2">
+                            Solving problems through <em>code</em>
+                        </p>
+
+                        <a class="btn custom-btn custom-border-btn smoothscroll me-3" href="#section_2">
+                            Learn More
+                            <i class="bi-arrow-down ms-2"></i>
+                        </a>
+
+                        <a class="btn custom-btn smoothscroll" href="#section_4">
+                            View Projects
+                            <i class="bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="video-wrap">
+                    <div class="video-overlay"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Web Development</h3>
-                    <p>HTML, CSS, JavaScript</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Programming</h3>
-                    <p>Python, Java, C++</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Tools & Technologies</h3>
-                    <p>Git, VS Code, Terminal</p>
+        <!-- About Section -->
+        <section class="about-section section-padding" id="section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center mb-4">
+                        <em class="text-white">About Me</em>
+                        <h2 class="text-white">Who I Am</h2>
+                    </div>
+
+                    <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
+                        <h3 class="text-white mb-3">Hello! I'm Arpit Tiwari</h3>
+                        
+                        <p class="text-white">A passionate developer with a keen interest in building innovative solutions. I enjoy working on challenging projects that push my boundaries and help me grow.</p>
+
+                        <p class="text-white">When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or learning something new.</p>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-6 border-end">
+                                <div class="about-thumb text-center mb-lg-5 mb-3">
+                                    <i class="bi-lightbulb about-icon"></i>
+                                    <h4 class="text-white mb-0">Problem Solver</h4>
+                                    <p class="text-white-50">Creative Solutions</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-6">
+                                <div class="about-thumb text-center mb-lg-5 mb-3">
+                                    <i class="bi-rocket about-icon"></i>
+                                    <h4 class="text-white mb-0">Fast Learner</h4>
+                                    <p class="text-white-50">Always Growing</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-6 border-end">
+                                <div class="about-thumb text-center">
+                                    <i class="bi-heart about-icon"></i>
+                                    <h4 class="text-white mb-0">Passionate</h4>
+                                    <p class="text-white-50">Love to Code</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-6">
+                                <div class="about-thumb text-center">
+                                    <i class="bi-people about-icon"></i>
+                                    <h4 class="text-white mb-0">Team Player</h4>
+                                    <p class="text-white-50">Great Collaboration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>Description of your first project goes here.</p>
-                    <a href="#" class="project-link">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Description of your second project goes here.</p>
-                    <a href="#" class="project-link">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>Description of your third project goes here.</p>
-                    <a href="#" class="project-link">View Project →</a>
+        <!-- Skills Section -->
+        <section class="menu-section section-padding" id="section_3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center mb-4">
+                        <em class="text-white">My Expertise</em>
+                        <h2 class="text-white">Skills & Technologies</h2>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="menu-thumb">
+                            <div class="menu-info d-flex flex-wrap align-items-center">
+                                <h4 class="mb-0">Web Development</h4>
+                            </div>
+
+                            <div class="menu-price-wrap">
+                                <p class="menu-price">HTML, CSS, JavaScript</p>
+                            </div>
+
+                            <div class="menu-btn">
+                                <i class="bi-code-slash custom-btn-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="menu-thumb">
+                            <div class="menu-info d-flex flex-wrap align-items-center">
+                                <h4 class="mb-0">Programming</h4>
+                            </div>
+
+                            <div class="menu-price-wrap">
+                                <p class="menu-price">Python, Java, C++</p>
+                            </div>
+
+                            <div class="menu-btn">
+                                <i class="bi-laptop custom-btn-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="menu-thumb">
+                            <div class="menu-info d-flex flex-wrap align-items-center">
+                                <h4 class="mb-0">Tools & Tech</h4>
+                            </div>
+
+                            <div class="menu-price-wrap">
+                                <p class="menu-price">Git, VS Code, Terminal</p>
+                            </div>
+
+                            <div class="menu-btn">
+                                <i class="bi-tools custom-btn-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="menu-thumb">
+                            <div class="menu-info d-flex flex-wrap align-items-center">
+                                <h4 class="mb-0">Database</h4>
+                            </div>
+
+                            <div class="menu-price-wrap">
+                                <p class="menu-price">MySQL, MongoDB</p>
+                            </div>
+
+                            <div class="menu-btn">
+                                <i class="bi-database custom-btn-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="menu-thumb">
+                            <div class="menu-info d-flex flex-wrap align-items-center">
+                                <h4 class="mb-0">Version Control</h4>
+                            </div>
+
+                            <div class="menu-price-wrap">
+                                <p class="menu-price">Git, GitHub</p>
+                            </div>
+
+                            <div class="menu-btn">
+                                <i class="bi-git custom-btn-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="menu-thumb">
+                            <div class="menu-info d-flex flex-wrap align-items-center">
+                                <h4 class="mb-0">Problem Solving</h4>
+                            </div>
+
+                            <div class="menu-price-wrap">
+                                <p class="menu-price">Algorithms, Data Structures</p>
+                            </div>
+
+                            <div class="menu-btn">
+                                <i class="bi-puzzle custom-btn-icon"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p>I'd love to hear from you! Feel free to reach out.</p>
-                <div class="contact-links">
-                    <a href="mailto:tiwari.arpit1999@gmail.com" class="contact-link">Email</a>
-                    <a href="https://github.com/arpittiwari11" class="contact-link">GitHub</a>
-                    <a href="https://www.linkedin.com/in/arpit-tiwari-25a4441b0/" class="contact-link">LinkedIn</a>
+        <!-- Projects Section -->
+        <section class="reviews-section section-padding section-bg" id="section_4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center mb-5">
+                        <em class="text-white">My Work</em>
+                        <h2 class="text-white">Featured Projects</h2>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="reviews-thumb">
+                            <div class="reviews-body">
+                                <h4 class="text-white mb-3">Project 1</h4>
+
+                                <p class="text-white-50">Description of your first project goes here. What problem does it solve? What technologies did you use?</p>
+
+                                <a href="#" class="custom-btn custom-border-btn mt-3">
+                                    View Project
+                                    <i class="bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+
+                            <div class="reviews-image-wrap">
+                                <div class="reviews-icon-wrap d-flex align-items-center">
+                                    <i class="bi-folder2-open reviews-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="reviews-thumb">
+                            <div class="reviews-body">
+                                <h4 class="text-white mb-3">Project 2</h4>
+
+                                <p class="text-white-50">Description of your second project. Highlight the key features and what you learned from building it.</p>
+
+                                <a href="#" class="custom-btn custom-border-btn mt-3">
+                                    View Project
+                                    <i class="bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+
+                            <div class="reviews-image-wrap">
+                                <div class="reviews-icon-wrap d-flex align-items-center">
+                                    <i class="bi-folder2-open reviews-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="reviews-thumb">
+                            <div class="reviews-body">
+                                <h4 class="text-white mb-3">Project 3</h4>
+
+                                <p class="text-white-50">Description of your third project. What makes it special? What challenges did you overcome?</p>
+
+                                <a href="#" class="custom-btn custom-border-btn mt-3">
+                                    View Project
+                                    <i class="bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+
+                            <div class="reviews-image-wrap">
+                                <div class="reviews-icon-wrap d-flex align-items-center">
+                                    <i class="bi-folder2-open reviews-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Arpit Tiwari. All rights reserved.</p>
-        </div>
-    </footer>
+        <!-- Contact Section -->
+        <section class="contact-section section-padding" id="section_5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center mb-4">
+                        <em class="text-white">Let's Connect</em>
+                        <h2 class="text-white">Get In Touch</h2>
+                    </div>
 
+                    <div class="col-lg-5 col-12 me-auto mb-5 mb-lg-0">
+                        <h3 class="text-white mb-4">Contact Info</h3>
+
+                        <p class="text-white mb-2">
+                            <i class="bi-envelope me-2"></i>
+                            <a href="mailto:tiwari.arpit1999@gmail.com" class="text-white">
+                                tiwari.arpit1999@gmail.com
+                            </a>
+                        </p>
+
+                        <h5 class="text-white mt-4 mb-3">Social Links</h5>
+
+                        <div class="social-links">
+                            <a href="https://github.com/arpittiwari11" target="_blank" class="social-icon-link">
+                                <i class="bi-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/arpit-tiwari-25a4441b0/" target="_blank" class="social-icon-link">
+                                <i class="bi-linkedin"></i>
+                            </a>
+
+                            <a href="mailto:tiwari.arpit1999@gmail.com" class="social-icon-link">
+                                <i class="bi-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="contact-info-wrap">
+                            <div class="contact-info d-flex align-items-center">
+                                <i class="bi-lightbulb contact-icon"></i>
+                                <div>
+                                    <h5 class="text-white mb-2">Open to Opportunities</h5>
+                                    <p class="text-white-50">I'm always interested in hearing about new projects and opportunities.</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info d-flex align-items-center">
+                                <i class="bi-clock contact-icon"></i>
+                                <div>
+                                    <h5 class="text-white mb-2">Response Time</h5>
+                                    <p class="text-white-50">I typically respond within 24-48 hours.</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info d-flex align-items-center">
+                                <i class="bi-geo-alt contact-icon"></i>
+                                <div>
+                                    <h5 class="text-white mb-2">Location</h5>
+                                    <p class="text-white-50">Available for remote work worldwide.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center">
+                        <p class="copyright-text">© 2025 Arpit Tiwari. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
