@@ -215,7 +215,7 @@ em {
 .hero-banner {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 650px;
   overflow: hidden;
   max-width: 100vw;
 }
@@ -223,7 +223,9 @@ em {
 .hero-banner-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center top;
+  background: var(--white-color);
   max-width: 100%;
 }
 
