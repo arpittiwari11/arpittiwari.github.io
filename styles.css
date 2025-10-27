@@ -208,7 +208,7 @@ em {
 .hero-section {
   position: relative;
   margin-bottom: 0;
-  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Banner Background - INCREASED HEIGHT */
@@ -264,7 +264,7 @@ em {
 /* Content Section */
 .hero-content-section {
   background: var(--white-color);
-  padding: 30px 0 120px 0;
+  padding: 30px 0 150px 0;
 }
 
 .hero-content-section h1 {
