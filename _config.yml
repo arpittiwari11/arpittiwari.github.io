@@ -4,7 +4,7 @@ description: Personal Website - Developer, Designer, Problem Solver
 show_downloads: false
 
 # Theme settings
-remote_theme: pages-themes/architect@v0.2.0
+remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-remote-theme
 
