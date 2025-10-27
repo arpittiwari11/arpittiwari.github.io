@@ -1,0 +1,18 @@
+# Site settings
+title: Arpit Tiwari
+description: Personal Website - Developer, Designer, Problem Solver
+show_downloads: false
+
+# Theme settings
+remote_theme: pages-themes/architect@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+# Optional: Google Analytics
+# google_analytics: YOUR_TRACKING_ID
+
+# Social links
+github_username: arpittiwari11
+linkedin_url: https://www.linkedin.com/in/arpit-tiwari-25a4441b0/
+email: tiwari.arpit1999@gmail.com
+
