@@ -250,6 +250,67 @@ em {
   background: linear-gradient(135deg, rgba(188, 108, 37, 0.7), rgba(183, 135, 82, 0.7));
 }
 
+/* Hero Profile Image */
+.hero-image-wrapper {
+  position: relative;
+  display: inline-block;
+  animation: fadeInRight 1s ease;
+}
+
+.hero-profile-image {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.hero-profile-image:hover {
+  transform: scale(1.05);
+  border-color: var(--secondary-color);
+  box-shadow: 0 25px 70px rgba(188, 108, 37, 0.4);
+}
+
+.hero-image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.3;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+
 /*---------------------------------------
   ABOUT SECTION
 -----------------------------------------*/
@@ -522,6 +583,11 @@ em {
   .border-end {
     border-right: 0 !important;
   }
+
+  .hero-profile-image {
+    width: 280px;
+    height: 280px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -535,5 +601,10 @@ em {
 
   p {
     font-size: 18px;
+  }
+
+  .hero-profile-image {
+    width: 220px;
+    height: 220px;
   }
 }
