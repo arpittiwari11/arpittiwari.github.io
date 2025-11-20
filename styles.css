@@ -632,82 +632,37 @@ em {
 }
 
 /*---------------------------------------
-  PUBLICATIONS SECTION
+  PUBLICATIONS SECTION (uses reviews-thumb structure)
 -----------------------------------------*/
-.publications-section {
-  background: var(--section-bg-color);
-  position: relative;
-}
-
-.publication-card {
-  background: var(--white-color);
-  border-radius: var(--border-radius-medium);
-  padding: 35px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  height: 100%;
-  border-left: 4px solid var(--primary-color);
-}
-
-.publication-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(188, 108, 37, 0.2);
-}
-
-.publication-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.publication-info {
   margin-bottom: 20px;
 }
 
-.publication-icon {
-  font-size: 32px;
+.publication-venue,
+.publication-authors {
+  color: var(--p-color);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.publication-venue i,
+.publication-authors i {
   color: var(--primary-color);
-}
-
-.publication-type {
-  background: var(--secondary-color);
-  color: var(--white-color);
-  padding: 6px 16px;
-  border-radius: var(--border-radius-large);
-  font-size: 14px;
-  font-weight: var(--font-weight-bold);
-}
-
-.publication-card h4 {
-  color: var(--dark-color);
-  font-size: 22px;
-  line-height: 1.4;
-}
-
-.publication-authors,
-.publication-venue {
-  color: var(--p-color);
-  font-size: 16px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.publication-abstract {
-  color: var(--p-color);
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
 }
 
 .publication-links {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .pub-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 16px;
+  padding: 8px 14px;
   background: var(--primary-color);
   color: var(--white-color);
   border-radius: var(--border-radius-small);
@@ -719,21 +674,22 @@ em {
 .pub-link:hover {
   background: var(--secondary-color);
   color: var(--white-color);
-  transform: translateX(5px);
+  transform: translateX(3px);
 }
 
 .pub-link i {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* Responsive */
 @media screen and (max-width: 991px) {
-  .publication-card {
-    padding: 25px;
-    margin-bottom: 20px;
+  .publication-venue,
+  .publication-authors {
+    font-size: 14px;
   }
   
-  .publication-card h4 {
-    font-size: 20px;
+  .pub-link {
+    padding: 6px 12px;
+    font-size: 13px;
   }
 }
