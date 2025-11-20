@@ -333,8 +333,8 @@ em {
   SKILLS/MENU SECTION
 -----------------------------------------*/
 .menu-section {
-  /* background: var(--primary-color);*/
-   background: var(--section-bg-color);
+  background: var(--primary-color);
+   /* background: var(--section-bg-color); */
 }
 
 .menu-thumb {
