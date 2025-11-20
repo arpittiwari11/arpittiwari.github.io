@@ -330,11 +330,17 @@ em {
 }
 
 /*---------------------------------------
+  PUBLICATIONS SECTION  
+-----------------------------------------*/
+.publications-section {
+  background: var(--section-bg-color);
+}
+
+/*---------------------------------------
   SKILLS/MENU SECTION
 -----------------------------------------*/
 .menu-section {
   background: var(--primary-color);
-   /* background: var(--section-bg-color); */
 }
 
 .menu-thumb {
