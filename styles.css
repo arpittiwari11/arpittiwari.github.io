@@ -311,8 +311,9 @@ em {
   ABOUT SECTION
 -----------------------------------------*/
 .about-section {
-  background: var(--section-bg-color);
-}
+  /* background: var(--section-bg-color);*/
+ background: var(--primary-color);
+  }
 
 .about-thumb {
   padding: 20px;
@@ -332,7 +333,8 @@ em {
   SKILLS/MENU SECTION
 -----------------------------------------*/
 .menu-section {
-  background: var(--primary-color);
+  /* background: var(--primary-color);*/
+   background: var(--section-bg-color);
 }
 
 .menu-thumb {
